@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UNIHUSTLE</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="#" class="logo">
+     <h2 class="def">UNIHUSTLE</h2>   
+      </a>
+      <ul class="menu-links">
+        <li class="dropdown">
+          <a href="#">Unihustle Business</a>
+          <div class="dropdown-content">
+            <a href="#">Unihustle Pro
+              
+            </a>
+            <a href="#">Unihustle Certified</a>
+            <a href="#">Unihustle Enterprise</a>
+          </div>
+        </li>  
+        <li class="dropdown">
+          <a href="#">Explore</a>
+          <div class="dropdown-content">
+            <a href="#">Option 1</a>
+            <a href="#">Option 2</a>
+            <a href="#">Option 3</a>
+          </div>
+        </li>
+        <li class="language-item">
+          <a href="#">
+            <span class="material-symbols-outlined">language</span>
+            English
+          </a>
+        </li>
+        <li><a href="#">Become a Seller</a></li>
+        <li><a href="#">Sign In</a></li>
+        <li class="join-btn"><a href="#">Join Us</a></li>
+        <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+      </ul>
+      <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+    </nav>
+  </header>
+
+  
+  <section class="hero-section">
+    <div class="content">
+      <h1>YOUR HUSTLE, OUR SUPPORT</h1>
+      <form action="#" class="search-form">
+        <input type="text" placeholder="Search for any service..." required>
+        <button class="material-symbols-outlined" type="submit">search</button>
+      </form>
+      <div class="popular-tags">
+        Popular:
+        <ul class="tags">
+          <li><a href="#">Website Design</a></li>
+          <li><a href="#">Logo Design</a></li>
+          <li><a href="#">WordPress</a></li>
+          <li><a href="#">AI Design</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <div class="nav">
+    <div class="container">
+      <ul>
+        <li>Register</li></a>
+        <li>Schedule</li></a>
+        <li>Sponsors</li></a>
+        <li>About</li></a>
+       
+    </div>
+  </div>
+  <section class="popular-services">
+
+      <div class="card-container">
+        <div class="image-card">
+          <img style="height: 300px; width: 200px;" src="" alt="PROGRAMMING">
+      
+        </div>
+        <div class="image-card">
+          <img src="https://i.pinimg.com/564x/1d/4b/fb/1d4bfb12ea5e371168f7bed7908930b0.jpg" alt="PHOTOGRAPGY">
+        </div>
+        <div class="image-card">
+          <img src="https://i.pinimg.com/564x/5a/19/71/5a1971f6ea30f6447a816385bf469cc1.jpg" alt="PERSONAL TRAINER">
+        </div>
+        <div class="image-card">
+          <img style="height: 300px; width: 200px;" src="https://i.pinimg.com/564x/4d/2a/4c/4d2a4c4df1fbf9d659695c1289e8b2a9.jpg" alt="tutoring">
+        </div>
+        <!--\ <div class="image-card"> 
+           <img style="height: 300px; width: 200px;" src=" 
+        <!-- </div> -->
+
+        <!-- <div class="hip">
+        <section class="best-part">
+          <div class="container">
+            <h2>The Best Part? Everything.</h2>
+            <p>Stick to your budget. Find the right service for every price point. No hourly rates, just project-based pricing.</p>
+            <p>Get quality work done quickly. Hand your project over to a talented freelancer in minutes, get long-lasting results.</p>
+            <p>Pay when you're happy. Upfront quotes mean no surprises. Payments only get released when you approve.</p>
+            <p>Count on 24/7 support. Our round-the-clock support team is available to help anytime, anywhere.</p>
+          </div>
+        </section> -->
+        
+        
+        
+        
+           
+ </div>
+    </body>
+    </html>
+    
+      <div class="carousel-navigation">
+        <button style="float: left;" id="prevBtn">&lt;</button>
+        <button style="float: right; margin-bottom: 60px;" id="nextBtn">&gt;</button>
+      </div>
+    </div>
+  </section>
+  
+  
+
+ 
+  
+
+  <script>
+    // JavaScript for image card navigation
+    const cardContainer = document.querySelector('.card-container');
+    const imageCards = document.querySelectorAll('.image-card');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    let currentIndex = 0;
+  
+    function navigateCards(direction) {
+      currentIndex += direction;
+      if (currentIndex < 0) {
+        currentIndex = 0;
+      } else if (currentIndex > imageCards.length - 4) {
+        currentIndex = imageCards.length - 4;
+      }
+  
+      const translateXValue = -currentIndex * (25 + 20); // Adjust based on card width and margin
+      cardContainer.style.transform = `translateX(${translateXValue}%)`;
+    }
+  
+    prevBtn.addEventListener('click', () => {
+      navigateCards(-1);
+    });
+  
+    nextBtn.addEventListener('click', () => {
+      navigateCards(1);
+    });
+  </script>
+  
+  <script>
+    // JavaScript for service card navigation
+    const serviceCards = document.querySelectorAll('.service-card');
+    const prevServiceBtn = document.getElementById('prevServiceBtn');
+    const nextServiceBtn = document.getElementById('nextServiceBtn');
+    let currentIndexService = 0;
+  
+    function showServiceCard(index) {
+      serviceCards.forEach((card, i) => {
+        if (i === index) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+  
+    showServiceCard(currentIndexService);
+  
+    prevServiceBtn.addEventListener('click', () => {
+      currentIndexService = (currentIndexService - 1 + serviceCards.length) % serviceCards.length;
+      showServiceCard(currentIndexService);
+    });
+  
+    nextServiceBtn.addEventListener('click', () => {
+      currentIndexService = (currentIndexService + 1) % serviceCards.length;
+      showServiceCard(currentIndexService);
+    });
+  </script>
+  
+  <script>
+    // JavaScript for changing the background color
+    const header = document.querySelector('header');
+    const heroSection = document.querySelector('.hero-section');
+    const colors = ["#FF5733", "#33FF57", "#5733FF","#008000","#000000"]; // Add more colors if needed;
+  
+    function changeBackgroundColor() {
+      header.style.backgroundColor = colors[currentIndexService];
+      heroSection.style.backgroundColor = colors[currentIndexService];
+      currentIndexService = (currentIndexService + 1) % colors.length;
+    }
+  
+    // Initially set the background color
+    changeBackgroundColor();
+  
+    // Change the background color every 6 seconds
+    setInterval(changeBackgroundColor, 6000);
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+const closeMenuBtn = document.getElementById('close-menu-btn');
+const mobileMenu = document.querySelector('.navbar .menu-links');
+
+hamburgerBtn.addEventListener('click', () => {
+  mobileMenu.style.left = '0';
+});
+
+closeMenuBtn.addEventListener('click', () => {
+  mobileMenu.style.left = '-300px';
+});
+  
+  </script>
+
+  <!-- <script>
+    imageCards.forEach(cardContainer=colors)
+  </script> -->
+  
+  
+  
+
+
+</body>
+</html> 
+
+
+
+
+
+  
+

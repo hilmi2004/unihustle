@@ -1,0 +1,479 @@
+/* Importing Google font - Fira Sans */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fira Sans', sans-serif;
+}
+.def{
+  top: 0;
+  left: 0;
+  font-family: 'Times New Roman', Times, serif;
+  margin-right: 10px;
+}
+/* Nav */
+.nav {
+  background: #000;
+  height: 80px;
+  width: 100%;
+}
+/* Add this CSS to make the navigation responsive */
+.nav ul {
+  /* Existing styles */
+}
+
+.nav ul li {
+  /* Existing styles */
+}
+
+/* Add a media query for screens with a maximum width of 900px */
+@media screen and (max-width: 900px) {
+  .nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav ul li {
+    padding: 10px 0;
+  }
+
+  .navbar #hamburger-btn,
+  .navbar #close-menu-btn {
+    display: block;
+  }
+
+  /* Adjust other styles as needed for smaller screens */
+}
+
+
+
+
+.colors{
+  background-color: bisque;
+}
+
+.nav ul {
+  height: 80px;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.nav ul li {
+  color: #fff;
+  display: inline-block;
+  height: 80px;
+  line-height: 80px;
+  list-style: none;
+  padding: 0 140px;
+  transition: background .5s;
+}
+
+/* Add this CSS to your style.css file */
+
+.service-card {
+  width: 200px; /* Adjust the width as needed */
+  height: 300px; /* Adjust the height as needed */
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #ccc; /* Add a border for card appearance */
+  margin: 10px; /* Add margin to space out the cards */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.image-card {
+  width: 200px;
+  height: 300px;
+  background-color: #f0f0f0; /* Card background color */
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 10px;
+}
+
+.image-card img {
+  max-width: 101%;
+  max-height: fit-content;
+  object-fit: fill; /* Ensure the image covers the entire card */
+}
+
+/* Add this to your CSS file */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:#117bff; /* Background color for the dropdown menu */
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f2f2f2; /* Background color for the hovered item */
+}
+
+
+.ngh{
+  width: 18px;
+  
+}
+
+
+
+.service-card img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+.service-card h3 {
+  margin-top: 10px;
+}
+
+
+.carousel-navigation {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#prevBtn, #nextBtn {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#prevBtn:hover, #nextBtn:hover {
+  background-color: #555;
+}
+
+.nav ul li:hover {
+  background: #117bff;
+  cursor: pointer;
+  transition: background .5s;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: #1B1B1D;
+}
+
+.service-card {
+  width: 200px; /* Adjust the width as needed */
+  height: 300px; /* Adjust the height as needed */
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #ccc; /* Add a border for card appearance */
+  margin: 10px; /* Add margin to space out the cards */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.service-card img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  padding: 20px;
+}
+
+header .navbar {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .menu-links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+}
+
+.navbar .menu-links li a {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.navbar .menu-links .language-item a {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.navbar .menu-links .language-item span {
+  font-size: 1.3rem;
+}
+
+.navbar .menu-links li a:hover {
+  color: #1dbf73;
+}
+
+.navbar .menu-links .join-btn a {
+  border: 1px solid #fff;
+  padding: 8px 15px;
+  border-radius: 4px;
+}
+
+.navbar .menu-links .join-btn a:hover {
+  color: #fff;
+  border-color: transparent;
+  background: #1dbf73;
+}
+
+.hero-section {
+  height: 100vh;
+  background-image: url("images/hero-img.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  padding: 0 20px;
+  align-items: center;
+}
+
+.hero-section .content {
+  max-width: 1280px;
+  margin: 0 auto 40px;
+  width: 100%;
+}
+
+.hero-section .content h1 {
+  color: #fff;
+  font-size: 3rem;
+  max-width: 630px;
+  line-height: 65px;
+}
+
+.hero-section .search-form {
+  display: ruby;
+  height: 48px;
+  display: flex;
+  max-width: 630px;
+  margin-top: 30px;
+}
+
+.hero-section .search-form input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 0 15px;
+  font-size: 1rem;
+  border-radius: 4px 0 0 4px;
+}
+
+.hero-section .search-form button {
+  height: 100%;
+  width: 60px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #1dbf73;
+  color: #fff;
+  border-radius: 0 4px 4px 0;
+  transition: background 0.2s ease;
+}
+
+.hero-section .search-form button:hover {
+  background: #19a463;
+}
+
+.hero-section .popular-tags {
+  display: flex;
+  color: #fff;
+  gap: 25px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-top: 25px;
+}
+
+.hero-section .popular-tags .tags {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  list-style: none;
+}
+
+.hero-section .tags li a {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 4px 12px;
+  border-radius: 50px;
+  transition: 0.2s ease;
+}
+
+.hero-section .tags li a:hover {
+  color: #000;
+  background: #fff;
+}
+
+.navbar #hamburger-btn {
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  font-size: 1.7rem;
+}
+
+.navbar #close-menu-btn {
+  position: absolute;
+  display: none;
+  color: #000;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+
+.best-part {
+  background-color: #f5f5f5; /* Set the background color to your preference */
+  padding: 30px;
+  text-align: center;
+  object-fit: cover;
+}
+
+.best-part h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.best-part p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 900px) {
+  header.show-mobile-menu::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    backdrop-filter: blur(5px);
+  }
+
+  .navbar .menu-links {
+    height: 100vh;
+    max-width: 300px;
+    width: 100%;
+    background: #fff;
+    position: fixed;
+    left: -300px;
+    top: 0;
+    display: block;
+    padding: 75px 40px 0;
+    transition: left 0.2s ease;
+  }
+
+  header.show-mobile-menu .navbar .menu-links {
+    left: 0;
+  }
+
+  .navbar .menu-links li {
+    margin-bottom: 30px;
+  }
+
+  .navbar .menu-links li a {
+    color: #000;
+    font-size: 1.1rem;
+  }
+
+  .navbar .menu-links .join-btn a {
+    padding: 0;
+  }
+
+  .navbar .menu-links .join-btn a:hover {
+    color: #1dbf73;
+    background: none;
+  }
+
+  .navbar :is(#close-menu-btn, #hamburger-btn) {
+    display: block;
+  }
+
+  .hero-section {
+    background: none;
+  }
+
+  .hero-section .content {
+    margin: 0 auto 80px;
+  }
+
+  .hero-section .content :is(h1, .search-form) {
+    max-width: 100%;
+  }
+
+  .hero-section .content h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 55px;
+  }
+
+  .hero-section .search-form {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .hero-section .search-form input {
+    border-radius: 4px;
+  }
+  
+  .hero-section .search-form button {
+    margin-top: 10px;
+    border-radius: 4px;
+    width: 100%;
+  }
+
+  .hero-section .popular-tags {
+    display: none;
+  }
+}
